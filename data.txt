@@ -1,0 +1,65 @@
+users: [{
+    id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+    username: "",
+    user_id: "",
+    email: "",
+    password: "",
+    location: "",
+    face_image: "",
+    create_time: 1234567890123
+}]
+
+articleTypes: [{
+  "id": 1,
+  "name": "讨论"
+},
+{
+  "id": 2,
+  "name": "询问"
+},
+{
+  "id": 3,
+  "name": "牙医"
+},
+{
+  "id": 4,
+  "name": "牙套"
+},
+{
+  "id": 5,
+  "name": "智齿"
+},
+{
+  "id": 6,
+  "name": "种植"
+}]
+
+articles: [{
+  id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  author_id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  title: "",
+  content: "",
+  image: "",
+  category: 2,
+  thanks_num: 1,
+  collection_num: 1,
+  create_time: 1234567890111,
+  comment_num: 3,
+  is_reported: false,
+  report_reason: "",
+  vote_up: 0,
+  vote_down: 0,
+  is_collection: false
+}]
+
+comments: [{
+  id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  author_id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  content: "",
+  source_comment: "",
+  create_time: 1234567890123,
+  collection_num: 20,
+  thanks_num: 4,
+  is_collection: false,
+  is_thanks: true
+}]
