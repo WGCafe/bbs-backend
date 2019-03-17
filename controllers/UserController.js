@@ -1,7 +1,7 @@
 const User = require('../models/User');
 
 const UserController = {
-  insert: function(req) {
+  insert: function(req, res) {
     const {
       username,
       email,
@@ -19,12 +19,12 @@ const UserController = {
       if (!docs) {
         user.save();
 
-        resizeBy.json({
+        res.json({
           status: 1000,
           context: 'success'
         });
       } else {
-        resizeBy.json({
+        res.json({
           status: 500,
           context: 'This email is exist.'
         });
@@ -32,7 +32,7 @@ const UserController = {
     });
   },
 
-  Login: function(req) {
+  Login: function(req, res) {
     const {
       email,
       password
@@ -49,7 +49,7 @@ const UserController = {
     });
   },
 
-  resetPassword: function(req) {
+  resetPassword: function(req, res) {
     const {
       user_id,
       password
@@ -66,7 +66,7 @@ const UserController = {
     });
   },
 
-  findOne: function(req) {
+  findOne: function(req, res) {
     const { params } = req;
 
     if (!params.user_id) {
@@ -86,7 +86,7 @@ const UserController = {
     });
   },
 
-  updateUser: function(req) {
+  updateUser: function(req, res) {
     const {
       params,
       body
