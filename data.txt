@@ -65,10 +65,11 @@ comments: [{
   id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
   author_id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
   content: "",
-  source_comment: "",
+  source_comment_id: "",
   create_time: 1234567890123,
   collection_num: 20,
   thanks_num: 4,
   is_collection: false,
-  is_thanks: true
+  is_thanks: true,
+  create_time: 1234567890111
 }]

@@ -45,7 +45,7 @@ const ArticleController = {
       return;
     }
 
-    Article.find({ _id: article_id }).exec((err, docs) => {
+    Article.find({ _id: params.article_id }).exec((err, docs) => {
       res.json({
         status: 1000,
         context: 'success'
