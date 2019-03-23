@@ -52,6 +52,15 @@ articles: [{
   is_collection: false
 }]
 
+collections: [{
+  id: 'xxx',
+  article_id: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9',
+  collectors: [
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+  ];
+}]
+
 comments: [{
   id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
   author_id: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",

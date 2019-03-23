@@ -78,7 +78,7 @@ const UserController = {
       return;
     }
 
-    User.find({ _id: user_id }).exec((err, docs) => {
+    User.find({ _id: params.user_id }).exec((err, docs) => {
       res.json({
         status: 1000,
         context: docs
@@ -101,7 +101,7 @@ const UserController = {
       return;
     }
 
-    User.findOneAndUpdate({ _id: user_id}, body.updateUser, (err, docs) => {
+    User.findOneAndUpdate({ _id: params.user_id}, body.updateUser, (err, docs) => {
       res.json({
         status: 1000,
         context: docs

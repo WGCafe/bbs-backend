@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
+const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const Article = mongoose.model('Article', {
   title: String,
+  author_id: ObjectId,
   content: String,
   image: String,
   category: Number,
