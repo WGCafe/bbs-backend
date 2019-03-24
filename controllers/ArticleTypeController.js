@@ -27,11 +27,11 @@ const DEFAULT_ARTICLE_TYPES = [{
 
 const ArticleTypeController = {
   init: function(req, res) {
-    ArticleType.insertMany(DEFAULT_ARTICLE_TYPES, function(error) {
+    ArticleType.insertMany(DEFAULT_ARTICLE_TYPES, function(err) {
       if (err) {
         res.json({
           status: 500,
-          context: error
+          context: err
         });
       } else {
         res.json({
